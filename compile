@@ -1,0 +1,2 @@
+python3 rdp.py > maraa.dot
+dot -Tpng maraa.dot > maraa.png
