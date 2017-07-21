@@ -16,22 +16,29 @@ Inside the folder im4.l and im4.y are the lex and the yacc files respectively.
 Complile the yacc files:
 
  lex im4.l
-  yacc im4.y
-  gcc y.tab.c -ll -ly
-  ./a.out <ip.txt 
+ 
+ yacc im4.y
+  
+ gcc y.tab.c -ll -ly
+ 
+ ./a.out <ip.txt 
 
 (ip.txt is the input file. Run the above commands)
 
 4.Time to generate AST Image file.
 
  python3 rdp.py > filename.dot
-  dot -Tpng filename.dot > img_filename.png
+ 
+ dot -Tpng filename.dot > img_filename.png
 
 (An image is generated with png format with the img_filename.png. Open the image and AST can be seen ) 
 
 
 Compiler Design Project by:
 *Bhargava Bhodas --------->01FB14ECS054
+
 *Chandana Balaji BP ------>01FB14ECS056
+
 *B R Naveen -------------->01FB14ECS051
+
 *Abhimanyu --------------->01FB14ECS005
